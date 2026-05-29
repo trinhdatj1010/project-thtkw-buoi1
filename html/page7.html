@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Bảng hóa đơn</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style4.css">
+    </head>
+    <body>
+        <table>
+            <caption>Hóa đơn bán hàng</caption>
+            <tr>
+                <td>STT</td>
+                <td>Tên hàng</td>
+                <td>Số lượng</td>
+                <td>Đơn giá</td>
+                <td>Đơn vị tính</td>
+                <td>Thành tiền</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>A</td>
+                <td class="soluong">2</td>
+                <td class="dongia">50</td>
+                <td>Thùng</td>
+                <td class="thanhtien">?</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td class="soluong">5</td>
+                <td class="dongia">70</td>
+                <td>Cái</td>
+                <td class="thanhtien">?</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>C</td>
+                <td class="soluong">7</td>
+                <td class="dongia">100</td>
+                <td>Thùng</td>
+                <td class="thanhtien">?</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">Tổng thanh toán</td>
+                <td id="tongthanhtoan" colspan="2" style="text-align: center;">?</td>
+            </tr>
+            <script>
+                const sl = document.getElementsByClassName("soluong");
+                const dg = document.getElementsByClassName("dongia");
+                const tt = document.getElementsByClassName("thanhtien");
+
+                let tongthanhtoan = 0;
+                for (let i = 0; i < sl.length; i++) {
+                    tt[i].innerHTML = Number(sl[i].innerHTML) * Number(dg[i].innerHTML);
+                    tongthanhtoan += Number(tt[i].innerHTML);
+                }
+                document.getElementById("tongthanhtoan").innerHTML = tongthanhtoan;
+            </script>   
+        </table>
+    </body>
+</html>

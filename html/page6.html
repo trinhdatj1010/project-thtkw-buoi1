@@ -1,0 +1,20 @@
+<html lang = "vi">
+	<head>
+		<title>Nhập thông tin</title>
+		<meta charset ="utf-8">
+	</head>
+	<body>   
+        <script>
+            let d,r;
+            do{
+                d = Number(prompt("Nhập chiều dài"));
+                r = Number(prompt("Nhập chiều rộng"));
+            }while(d<r);
+            if (d == r)
+            {window.alert(`Diện tích hình vuông cạnh:${d}cm = ${d*d}cm^2`);}
+            if (d > r)
+            {window.alert(`Diện tích hình chữ nhật dài:${d}cm, rộng:${r}cm = ${d*r}cm^2`);}
+            
+        </script>
+	</body>
+</html>

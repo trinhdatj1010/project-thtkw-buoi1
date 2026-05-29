@@ -1,0 +1,14 @@
+table{
+        border:1px solid;
+        width: 500px;
+        height: 3dvh;
+        border-radius: 15px;
+        margin: auto;
+        overflow: hidden;
+    }
+caption{
+        font-size: 25px;
+    }
+        td,tr{
+        border: 1px solid black;
+    }
