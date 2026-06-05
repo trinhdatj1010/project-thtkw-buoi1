@@ -6,7 +6,7 @@
 .container{
 	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 	padding:100px;
-	margin:100px 500px;
+	margin:100px 100px;
 	border-radius:20px;
 }
 form#frmlogin{
