@@ -1,28 +1,3 @@
-const productlist=[
-    {
-        name: "chuối",
-        price: "20k/kg",
-        description: "ngon",
-        image: "../assets/image/banana.jpg",
-        link: "https://nutriscan.app/calories-nutrition/banana"
-    },
-
-    {
-        name: "táo",
-        price: "20k/kg",
-        description: "ngon",
-        image: "../assets/image/apple.jpg",
-        link: "##"
-    },
-
-    {
-        name: "sầu riêng",
-        price: "100k/kg",
-        description: "ngon",
-        image: "../assets/image/durian.png",
-        link: "##"
-    },
-]
 function createItem(obj)
 {
     const item=document.createElement("div");
@@ -57,4 +32,33 @@ function createItem(obj)
     item.appendChild(containerInfo);
 
     document.getElementById("product-list").appendChild(item);
+}
+
+function createItemV2(obj)
+{
+    const list=document.getElementById("product-list")
+    list.innerHTML +=`
+        <div class="col">
+                <div class="card">
+                    <div class="image ratio ratio-1x1">
+                        <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-primary">${obj.name}</h4>
+                        <h5 class="card-text">${obj.price}</h5>
+                        <p style="text-align: ; line-height: 1.5;" class="card-text">${obj.description}</p>
+                        <a href="${obj.link}?masp=${obj.id}" class="card-link btn btn-primary">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+    `;
+}
+
+function fullitem(arr)
+{
+    let i=0;
+    while (i<arr.length) {
+        createItemV2(arr[i]);
+        i++;
+    }
 }
