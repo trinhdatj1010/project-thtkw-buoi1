@@ -39,18 +39,32 @@ function createItemV2(obj)
     const list=document.getElementById("product-list")
     list.innerHTML +=`
         <div class="col">
-                <div class="card h-100 w-100">
-                    <div class="image ratio ratio-1x1">
-                        <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
-                    </div>
-                    <div class="card-body text-center" style="background: whitesmoke;">
-                        <h5 class="card-title text-primary">${obj.name}</h5>
-                        <h6 class="card-text">${obj.price}</h6>
-                        <p style="text-align: ; line-height: 1.5;" class="card-text">${obj.description}</p>
-                        <a href="${obj.link}?masp=${obj.id}" class="card-link btn btn-primary" style="background: gray; border: white">Chi tiết</a>
-                    </div>
-                </div>
-            </div>
+    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+        <div class="ratio ratio-1x1">
+            <img class="card-img-top object-fit-cover" src="${obj.image}" alt="${obj.name}">
+        </div>
+        <div class="card-body d-flex flex-column p-3" style="background: #fff;">
+            <span class="badge rounded-pill mb-2 align-self-start"
+                  style="background:#E6F1FB; color:#0C447C; font-weight:500; font-size:11px;">
+                Sản phẩm
+            </span>
+            <h5 class="card-title fw-semibold mb-1" style="font-size:15px; color:#1a1a1a;">
+                ${obj.name}
+            </h5>
+            <p class="mb-2 fw-semibold" style="font-size:16px; color:#185FA5;">
+                ${obj.price}
+            </p>
+            <p class="card-text text-secondary mb-3" style="font-size:13px; line-height:1.6; flex-grow:1;">
+                ${obj.description}
+            </p>
+            <a href="${obj.link}?masp=${obj.id}"
+                class="btn w-100 d-flex align-items-center justify-content-center gap-2"
+                style="background:#378ADD; color:#fff; border-radius:8px; font-size:14px; font-weight:500; padding:9px 0; border:none;">
+                Chi tiết
+            </a>
+        </div>
+    </div>
+</div>
     `;
 }
 

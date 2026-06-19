@@ -11,14 +11,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <img class="card-img-top rounded" src="" alt="" id="img">
-        <h3 id="name">tên</h3>
-        <h4 id="price">giá</h4>
-        <p id="des">mô tả</p>
-        <button class="button button1">Mua</button>
-        <button class="button button2">Thêm vào giỏ hàng</button>
-        <a href="sanphamv2.html">Quay lại</a>
+    <div class="detail-wrapper">
+        <div class="img-side">
+            <img src="" alt="" id="img">
+        </div>
+        <div class="info-side">
+            <a href="sanphamv2.html" class="back-link">
+                Quay lại
+            </a>
+            <div class="badge-row">
+                <span class="badge-sp">Sản phẩm</span>
+                <span class="badge-stock">Còn hàng</span>
+            </div>
+            <h3 id="name">tên</h3>
+            <h4 id="price">giá</h4>
+            <hr class="divider">
+            <p id="des">mô tả</p>
+            <div class="btn-row">
+                <button class="btn-buy">
+                    Mua
+                </button>
+                <button class="btn-cart">
+                    Giỏ hàng
+                </button>
+            </div>
+        </div>
     </div>
     <script>
         const urlPramas=new URLSearchParams(window.location.search);
