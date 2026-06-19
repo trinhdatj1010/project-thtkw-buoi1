@@ -39,15 +39,15 @@ function createItemV2(obj)
     const list=document.getElementById("product-list")
     list.innerHTML +=`
         <div class="col">
-                <div class="card">
+                <div class="card h-100 w-100">
                     <div class="image ratio ratio-1x1">
                         <img class="card-img-top" src="${obj.image}" alt="${obj.name}">
                     </div>
-                    <div class="card-body text-center">
-                        <h4 class="card-title text-primary">${obj.name}</h4>
-                        <h5 class="card-text">${obj.price}</h5>
+                    <div class="card-body text-center" style="background: whitesmoke;">
+                        <h5 class="card-title text-primary">${obj.name}</h5>
+                        <h6 class="card-text">${obj.price}</h6>
                         <p style="text-align: ; line-height: 1.5;" class="card-text">${obj.description}</p>
-                        <a href="${obj.link}?masp=${obj.id}" class="card-link btn btn-primary">Chi tiết</a>
+                        <a href="${obj.link}?masp=${obj.id}" class="card-link btn btn-primary" style="background: gray; border: white">Chi tiết</a>
                     </div>
                 </div>
             </div>
