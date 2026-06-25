@@ -44,10 +44,6 @@ function createItemV2(obj)
             <img class="card-img-top object-fit-cover" src="${obj.image}" alt="${obj.name}">
         </div>
         <div class="card-body d-flex flex-column p-3" style="background: #fff;">
-            <span class="badge rounded-pill mb-2 align-self-start"
-                  style="background:#E6F1FB; color:#0C447C; font-weight:500; font-size:11px;">
-                Sản phẩm
-            </span>
             <h5 class="card-title fw-semibold mb-1" style="font-size:15px; color:#1a1a1a;">
                 ${obj.name}
             </h5>
