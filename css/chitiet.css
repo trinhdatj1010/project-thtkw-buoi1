@@ -67,15 +67,3 @@ body {
   margin: 0;
   flex-grow: 1;
 }
-@media (max-width: 640px) {
-  .detail-wrapper {
-    grid-template-columns: 1fr;
-    margin: 16px;
-  }
-  .img-side img {
-    min-height: 240px;
-  }
-  .info-side {
-    padding: 1.25rem;
-  }
-}
