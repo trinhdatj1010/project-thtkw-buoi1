@@ -63,7 +63,6 @@ function createItemV2(obj)
 </div>
     `;
 }
-
 function fullitem(arr)
 {
     let i=0;

@@ -1,55 +1,55 @@
 const productlist=[
     {
         id: "1",
-        name: "Airbus A380",
-        price: "1.000.000 USD",
-        description: "Bay nhanh chở được nhiều người:))",
-        image: "../assets/image/maybay1.jfif",
+        name: "Mojito",
+        price: "160.000 VNĐ",
+        description: "Rhum trắng, lá bạc hà, chanh tươi, đường và soda hòa quyện tạo nên hương vị the mát, tươi mới  lựa chọn hoàn hảo cho ngày hè.",
+        image: "../assets/image/Mojito.png",
         link: "chitiet.html"
     },
 
     {
         id: "2",
-        name: "SR-71 Blackbird",
-        price: "10.000.000 USD",
-        description: "Bay nhanh bắn đau (nên mua để bắn nhà nyc)",
-        image: "../assets/image/maybay2.webp",
+        name: "Cosmopolitan",
+        price: "170.000 VNĐ",
+        description: "Sự kết hợp tinh tế giữa vodka, triple sec, nước ép nam việt quất và chanh tươi, mang đến vị chua ngọt thanh lịch và quyến rũ.",
+        image: "../assets/image/Cosmopolitan.png",
         link: "chitiet.html"
     },
 
     {
         id: "3",
-        name: "Sầu riêng",
-        price: "100k/kg",
-        description: "ngon",
-        image: "../assets/image/durian.png",
+        name: "Blue Lagoon",
+        price: "160.000 VNĐ",
+        description: "Vodka, blue curaçao và lemonade hòa quyện tạo nên màu xanh biển bắt mắt cùng vị ngọt mát, tươi vui và đầy sức sống.",
+        image: "../assets/image/Blue Lagoon.png",
         link: "chitiet.html"
     },
 
     {
         id: "4",
-        name: "B-2 Spirit",
-        price: "2.100.000.000 USD",
-        description: "Chiều dài: 20,9 m (69 ft) Sải cánh: 52,12 m (172 ft)",
-        image: "../assets/image/b2.jpg",
+        name: "Piña Colada",
+        price: "180.000 VNĐ",
+        description: "Rhum, nước cốt dừa và nước ép thơm xay nhuyễn, vị béo ngậy ngọt ngào như đưa bạn đến vùng biển nhiệt đới đầy nắng gió.",
+        image: "../assets/image/Piña Colada.png",
         link: "chitiet.html"
     },
 
     {
         id: "5",
-        name: "B-52",
-        price: "105.700.000 USD",
-        description: "Chiều dài: 20,9 m (69 ft) Sải cánh: 52,12 m (172 ft)",
-        image: "../assets/image/b52.jpg",
+        name: "Margarita",
+        price: "180.000 VNĐ",
+        description: "Sự kết hợp kinh điển giữa tequila, triple sec và nước cốt chanh tươi, mang đến vị chua thanh mát, nhẹ nhàng và sảng khoái.",
+        image: "../assets/image/Margarita.png",
         link: "chitiet.html"
     },
 
     {
         id: "6",
-        name: "Su-35 ",
-        price: "100.000.000 USD",
-        description: "Chiều dài: 20,9 m (69 ft) Sải cánh: 52,12 m (172 ft)",
-        image: "../assets/image/su35.jpg",
+        name: "Old Fashioned",
+        price: "190.000 VNĐ",
+        description: "Sự kết hợp cổ điển giữa whisky, đường, bitters và vỏ cam, mang đến hương vị mạnh mẽ, sâu lắng và đầy nam tính.",
+        image: "../assets/image/Old Fashioned.png",
         link: "chitiet.html"
     },
 ]

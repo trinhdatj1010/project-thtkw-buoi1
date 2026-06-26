@@ -6,7 +6,7 @@ table
     border-radius: 15px;
     margin: auto;
     overflow: hidden;
-    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+    background: linear-gradient(135deg, #dfd3c3, #f5efe6);
 }
 
 caption
